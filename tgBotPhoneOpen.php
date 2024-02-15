@@ -1,0 +1,1 @@
+<?header("Location: tel:".$_GET["phone_num"]);?>

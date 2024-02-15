@@ -1,0 +1,806 @@
+.medalPetBasket-cont.swiper {
+    display: inline-flex;
+    background: #F6F6F6;
+    width: 100%;
+    margin-bottom: 13px;
+    padding: 20px 10px;
+}
+
+.medalPetBasket-section {
+    margin-right: 20px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.medalPetBasket-section_items {
+    display: inline-flex;
+    gap: 5px;
+    height: 100%;
+}
+
+.medalPetBasket-product {
+    display: inline-flex;
+    gap: 5px;
+    flex-direction: column;
+    min-width: 183px;
+    overflow: hidden;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    position: relative;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+}
+
+.medalPetBasket-product_title {
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-width: 147px;
+}
+
+.medalPetBasket-orderPopup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medalPetBasket-orderPopup {
+    max-height: 90%;
+    overflow-y: unset;
+    overflow-x: unset;
+    min-width: 50%;
+    max-width: 90%;
+    background: white;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    min-height: 60px;
+    flex-direction: column;
+}
+
+.medalPetBasket-orderPopup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.medalPetBasket-orderPopup-close:after {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    content: "";
+    background: black;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+.medalPetBasket-orderPopup-close:before {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    content: "";
+    background: black;
+    display: flex;
+    transform: rotate(-45deg);
+}
+
+.medalPetBasket-orderPopup-sectionTitle {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 42px;
+}
+
+span.medalPetBasket-orderPopup-sectionNum {
+    background: #DFDFDF;
+    font-size: 25px;
+    line-height: 42px;
+    padding: 4px 19px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.medalPetBasket-orderPopup-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.medalPetBasket-orderPopup-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.medalPetBasket-order {
+    margin-left: auto;
+}
+
+.medalPetBasket-product_img-wrapper {
+    width: 100%;
+    display: flex;
+    padding-top: 100%;
+    margin: auto;
+    position: relative;
+    /* margin-bottom: 20px; */
+}
+
+.medalPetBasket-product_img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.medalPetBasket-product_delete {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    cursor: pointer;
+}   
+
+.medalPetBasket-section.swiper-slide{
+    width: auto;
+}
+
+.medalPetBasket-order.swiper-slide {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.medalPetBasket-order a{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 25px;
+}
+
+.medalPetBasket-cont .swiper-scrollbar.swiper-scrollbar-horizontal{
+    bottom: 10px;
+}
+
+.medalPetBasket-product_price {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.medalPetBasket-product_bottom_line {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.medalPetBasket-product_quantity {
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: bold;
+    gap: 2px;
+}
+
+.medalPetBasket-product_quantity > * {
+    min-width: 24px;
+    min-height: 24px;
+    border: 1px solid #B2B2B2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.medalPetBasket-section.swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+.medalPetBasket-orderPopup-wrapper.hidden {
+    display: none;
+}
+
+label.fontInputs-label img {
+    width: 260px;
+    height: 260px;
+    margin-top: 12px;
+    object-fit: contain;
+}
+
+.medalPetBasket-orderPopup-content.fontInputs-cont {
+    flex-flow: wrap;
+    display: flex;
+    margin-top: 38px;
+    gap: 27px;
+    overflow-y: auto;
+    height: 100%;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+}
+
+.medalPetBasket-orderPopup-fontsInput .medalPetBasket-orderPopup {
+    display: flex;
+    flex-direction: column;
+}
+
+.medalPetBasket-orderPopup-content.fontInputs-item {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.fontInputs-input {
+    display: none;
+}
+
+label.fontInputs-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+label.fontInputs-label p {
+    color: #707070;
+    font-size: 20px;
+    position: relative;
+    padding-left: 23px;
+}
+
+label.fontInputs-label p:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid #707070;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.fontInputs-input:checked + label.fontInputs-label p {
+    color: black;
+    font-weight: bold;
+}
+
+.fontInputs-input:checked + label.fontInputs-label p:before {
+    border: 1px solid #000000;
+}
+
+.fontInputs-input:checked + label.fontInputs-label p:after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border: 1px solid #000000;
+    position: absolute;
+    border-radius: 50%;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000000;
+}
+
+.medalPetBasket-orderPopup-sectionProduct {
+    display: inline-flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 32px;
+    gap: 32px;
+}
+
+.medalPetBasket-orderPopup-productLeftPart {
+    max-width: 320px;
+    width: 100%;
+    position: relative;
+    min-height: 320px;
+}
+
+.medalPetBasket-orderPopup-productImg img {
+    max-width: 320px;
+    max-height: 430px;
+    padding: 10px;
+    /* width: 100%; */
+    object-fit: contain;
+}
+
+.medalPetBasket-orderPopup-productImg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #989898;
+    overflow: hidden;
+}
+
+.medalPetBasket-orderPopup-productNum {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #989898;
+}
+
+.medalPetBasket-orderPopup-productTitle {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+
+.medalPetBasket-orderPopup-productSubProps {
+    display: inline-flex;
+    gap: 18px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.medalPetBasket-orderPopup-priceCont {
+    display: inline-flex;
+    gap: 18px;
+    margin-bottom: 19px;
+}
+
+.medalPetBasket-orderPopup-productRightPart {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.medalPetBasket-orderPopup-orderPrice {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.medalPetBasket-orderPopup-oldPrice {
+    color: #DB4C4C;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+}
+
+.medalPetBasket-orderPopup-oldPrice:after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #DB4C4C;
+    content: "";
+    top: 50%;
+    left: 0;
+}
+
+.medalPetBasket-orderPopup-productPropertyTitle {
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.medalPetBasket-orderPopup-productPropertyCont {
+    margin-top: 16px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.medalPetBasket-orderPopup-fontsInput-input {
+    padding: 7px 17px;
+    border: 1px solid #949494;
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    display: inline-flex;
+    gap: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.medalPetBasket-orderPopup-fontsInput-input svg {
+    width: 20px;
+    height: 14px;
+    padding: 3px;
+}
+
+.medalPetBasket-orderPopup-productPropertyCont textarea {
+    padding: 10px;
+    border: 1px solid #949494;
+    font-size: 16px;
+    line-height: 21px;
+    outline: none;
+    width: 100%;
+    resize: none
+}
+
+.medalPetBasket-orderPopup-productPropertys {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.medalPetBasket-orderPopup .strong_orange_btn{
+    text-align: center;
+    margin: auto;
+    min-width: 300px;
+} 
+
+.medalPetBasket-section_title a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    display: block;
+    color: #8B8B8B;
+    text-align: center;
+    cursor: pointer;
+}
+
+.medalPetBasket-section_title a:hover {
+    color: #e8832a;
+}
+
+.swiper-slide.medalPetBasket-section-spliter {
+    width: auto;
+    margin-right: 20px;
+    place-self: center;
+    display: none;
+
+}
+
+.medalPetBasket-section.swiper-slide.selected + .medalPetBasket-section-spliter {
+    transform: rotateZ(180deg);
+    display: block;
+}
+
+.medalPetBasket-product.medalPetBasket-productFiller{
+    place-content: center;
+    height: 80%;
+    background: transparent;
+    min-height: 183px;
+}
+
+.medalPetBasket-productFiller-black{
+    display: none;
+}
+
+.medalPetBasket-section.selected .medalPetBasket-productFiller-black{
+    display: block;
+}
+
+.medalPetBasket-section.selected .medalPetBasket-productFiller-grey{
+    display: none;
+}
+
+.medalPetBasket-section.selected .medalPetBasket-section_title a{
+    color: #000000;
+}
+
+.medalpet_header-wrapper {
+    position: relative;
+    padding-bottom: 70px;
+    margin-top: -130px;
+    margin-bottom: -47px;
+}
+
+.medalpet_header img {
+    margin-top: 130px;
+    max-width: 1440px;
+    padding: 0 20px;
+}
+
+.medalpet_header {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    align-items: flex-end;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #ECECEC 0 75%, transparent 75% 100%);
+}
+
+img.medalpet_header-gradient {
+    top: 0;
+    position: absolute;
+    right: calc((100vw - 100%) / -2);
+    transform: rotateZ(90deg);
+}
+
+.medalpet_header-wrapper::after {
+    height: 1px;
+    width: 100vw;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.medalPetBasket-orderPopup-sectionCustomer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    min-width: 450px;
+    gap: 12px;
+}
+
+.medalPetBasket-orderPopup-customerPropertyCont:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.medalPetBasket-orderPopup-customerPropertyCont > * {
+    width: 100%;
+}
+
+.medalPetBasket-orderPopup-customerPropertyCont {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.medalPetBasket-orderPopup-customerPropertyPrivacy {
+    margin-bottom: 30px;
+    margin-top: 7px;
+}
+
+.medalPetBasket-orderPopup-customerPropertyPrivacy a{
+    color: #E8832A;
+}
+
+input.medalPetBasket-orderPopup-btn.strong_orange_btn {
+    margin-left: 0;
+}
+
+.medalPetBasket-orderPopup-customerPropertyInfo {
+    margin-bottom: 30px;
+    margin-top: 18px;
+}
+
+.medalPetBasket-orderPopup-customerPropertyCont input, .medalPetBasket-orderPopup-customerPropertyCont textarea {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #707070;
+    border-radius: 0;
+    outline: none;
+    resize: none;
+}
+
+.medalPetBasket-orderPopup-cont {
+    height: 100%;
+    overflow: auto;
+}
+
+.medalPetBasket-product.medalPetBasket-productFiller a{
+    display: flex;
+    align-self: center;
+}
+
+.medalPetBasket-section-spliter.swiper-slide, .medalPetBasket-section-spliter img{
+    width: 16px;
+    height: 38px;
+}
+
+@media (max-width: 860px) {
+    .medalpet_header img {
+        margin-top: 154px;
+        width: calc(100% - 20px);
+    }
+
+    .medalpet_header-wrapper::after{
+        display: none;
+    }
+    
+    .medalpet_header {
+        background-image: linear-gradient(180deg, #ECECEC 0 50%, transparent 50% 100%);
+    }
+
+    .medalPetBasket-orderPopup-sectionProduct {
+        flex-direction: column;
+    }
+
+    .medalPetBasket-orderPopup {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .medalPetBasket-orderPopup-title {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    span.medalPetBasket-orderPopup-sectionNum {
+        line-height: 27px;
+        font-size: 16px;
+        padding: 2px 12px;
+        margin-right: 12px;
+    }
+
+    .medalPetBasket-orderPopup-sectionTitle {
+        font-size: 13px;
+        line-height: 27px;
+    }
+
+    .medalPetBasket-orderPopup-productLeftPart {
+        max-width: unset;
+    }
+
+    .medalPetBasket-orderPopup-productNum {
+        font-size: 20px;
+    }
+
+    .medalPetBasket-orderPopup-productTitle {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .medalPetBasket-orderPopup-orderPrice {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .medalPetBasket-orderPopup-priceCont {
+        margin-bottom: 0;
+    }
+
+    .medalPetBasket-orderPopup-productPropertyTitle {
+        font-size: 11px;
+    }
+
+    .medalPetBasket-orderPopup-oldPrice {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .medalPetBasket-orderPopup-customerPropertyCont input, .medalPetBasket-orderPopup-customerPropertyCont textarea {
+        padding: 12px;
+        font-size: 11px;
+    }
+
+    input.medalPetBasket-orderPopup-btn.strong_orange_btn {
+        font-size: 13px;
+        padding: 6px 30px;
+        min-width: unset;
+    }
+
+    .medalPetBasket-orderPopup-sectionCustomer {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .medalPetBasket-orderPopup-customerPropertyCont {
+        font-size: 11px;
+        line-height: 13px;
+    }
+}
+
+.medalPetBasket-orderPopup-productPropertyCont.error .medalPetBasket-orderPopup-fontsInput-input,
+.medalPetBasket-orderPopup-productPropertyCont.error textarea,
+.medalPetBasket-orderPopup-customerPropertyCont .error{
+    border: 1px solid red;
+}
+
+.medalPetBasket-errorPopup-bg {
+    position: absolute;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medalPetBasket-errorPopup-cont {
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medalPetBasket-errorPopup-btn.strong_orange_btn {
+    margin-top: 20px;
+    text-align: center;
+    min-width: 50%;
+}
+
+.medalPetBasket-errorPopup-title {
+    font-weight: bold;
+    font-size: 24px;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+
+
+.medalPetBasket-product .products_lables {
+    position: absolute;
+    top: 5px;
+    left: -1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.medalPetBasket-product .product_label {
+    position: relative;
+    padding: 11px;
+    background: #00dd00;
+    color: #dd0000;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.medalPetBasket-product .not_avaible_label {
+    background: #dddddd;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    line-height: 16px;
+}
+
+.medalPetBasket-product .not_avaible_label:after {
+    border-left-color: #dddddd;
+}
+
+.medalPetBasket-orderTotal {
+    margin-bottom: 5px;
+}
+
+.medalPetBasket-orderPopup-total{
+    font-size: 21px;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: calc(100% - 20px);
+    margin-bottom: 30px;
+}
+
+.medalPetBasket-orderPopup-statusMessage-cont {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 120px;
+}
+
+.medalPetBasket-orderPopup-statusMessage-subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.medalPetBasket-orderPopup-statusMessage-title {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 22px;
+    font-weight: bold;
+    padding: 12px 20px;
+    background: #FCB900;
+}
